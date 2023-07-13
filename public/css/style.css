@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form-wrapper {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .form-wrapper .signin-form, .container .form-wrapper .signup-form {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #CACCCF, #FFFFFF);
+    box-shadow: 13px 13px 15px #D9DADE, -13px -13px 15px #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .form-wrapper .signin-form .loginError {
+    color: rgb(214, 74, 97);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.container .form-wrapper .signup-form{
+    height: 90%;
+}
+
+.container .form-wrapper .signUp-form .login_Router{
+    width: 80%;
+}
+.container .form-wrapper .signUp-form .login_Router p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container .form-wrapper .signUp-form .login_Router p a {
+    text-decoration: none;
+}
+
+.container .form-wrapper .signin-form form, .container .form-wrapper .signup-form form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .form-wrapper .signin-form form h2, .container .form-wrapper .signup-form h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .form-wrapper .signin-form form .fields, .container .form-wrapper .signup-form form .fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form-wrapper .signin-form form .fields .forDesign, .container .form-wrapper .signup-form form .fields .forDesign {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.container .form-wrapper .signin-form form .fields input, .container .form-wrapper .signup-form form .fields input {
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.40rem;
+    box-shadow: inset 8px 8px 8px #cbced1, -8px -8px 8px #ffffff;
+    color: #555;
+}
+.container .form-wrapper .signin-form form .fields .forDesign p, .container .form-wrapper .signup-form form .fields .forDesign p {
+    color: rgb(214, 74, 97);
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+}
+.container .form-wrapper .signup-form form .fields .forDesign{
+    margin-bottom: 0.8rem;
+}
+.container .form-wrapper .signin-form form input[type="submit"], .container .form-wrapper .signup-form form input[type="submit"]{
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    /* box-shadow: inset 8px 8px 8px #cbced1, -8px -8px 8px #ffffff; */
+    background: #4b70e2;
+    color: #f6f9f9;
+}
+
+/* .container .form-wrapper .signup-form{
+    transform: translateX(25%);
+    transition: 2s;
+    display: none;
+} */
+
+
+/* .form-switcher1{
+    display: none;
+}
+.form-switcher2{
+    transform: translateX(0%);
+    display: flex;
+} */
+
+
+@media screen and (max-width: 920px) {
+    .form-wrapper{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form-wrapper{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .form-wrapper{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 460px) {
+    .form-wrapper{
+        width: 85%;
+    }
+}

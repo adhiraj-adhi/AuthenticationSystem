@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for small device</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="signup-form">
+                <form action="/signup" method="post">
+                    <h2> Register Here </h2>
+                    <div class="fields">
+                        <div class="forDesign">
+                            <input type="email" name="email" id="" placeholder="Enter Email">
+                            <p class="emailError"> <%= data.email %> </p>
+                        </div>
+                        <div class="forDesign">
+                            <input type="password" name="password" id="" placeholder="Enter Password">
+                            <p class="passwordError"> <%= data.password %> </p>
+                        </div>
+                        <div class="forDesign">
+                            <input type="password" name="confPassword" id="" placeholder="Confirm Password">
+                            <p class="confPasswordError"> <%= data.password %> </p>
+                        </div>
+                    </div>
+                    <input type="submit" value="Register">
+                </form>
+
+                <div class="login_Router">
+                    <p> Already A User ? <a href="/"> Login Here </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        let form = document.querySelector("form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+        })
+    </script> -->
+</body>
+
+</html>
